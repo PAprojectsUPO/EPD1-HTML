@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog - Centro Deportivo SportMax</title>
+    <!-- link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Centro Deportivo SportMax</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="blog.html" aria-current="page">Blog</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h2>Blog deportivo</h2>
+            </header>
+            
+            <article>
+                <header>
+                    <h3>Consejos para mejorar tu rendimiento deportivo</h3>
+                    <time datetime="2025-09-20">20 de septiembre, 2025</time>
+                </header>
+                
+                <p>En este blog encontrarás los mejores consejos para optimizar tu entrenamiento y mejorar tu rendimiento en tus deportes favoritos.</p>
+                
+                <figure>
+                    <img src="images/thumbs/entrenamiento-thumb.jpg" alt="Sesión de entrenamiento" onclick="window.open('images/entrenamiento.jpg', '_blank')">
+                    <figcaption>Sesión de entrenamiento en nuestras instalaciones</figcaption>
+                </figure>
+
+                <section>
+                    <h4>Artículos más populares</h4>
+                    <ol>
+                        <li>
+                            <strong>Técnicas de pádel para principiantes</strong>
+                            <ul>
+                                <li>Posición básica</li>
+                                <li>Golpes fundamentales</li>
+                                <li>Estrategia de juego</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Entrenamientos de fútbol por edades</strong>
+                            <ul>
+                                <li>Categoría infantil (8-12 años)</li>
+                                <li>Categoría juvenil (13-17 años)</li>
+                                <li>Categoría adulto (+18 años)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Preparación física para baloncesto</strong>
+                            <ul>
+                                <li>Ejercicios de agilidad</li>
+                                <li>Fortalecimiento del tren inferior</li>
+                                <li>Trabajo cardiovascular</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h4>Rutinas recomendadas por deporte</h4>
+                    <table>
+                        <caption>Planificación semanal de entrenamientos</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Deporte</th>
+                                <th scope="col">Días/semana</th>
+                                <th scope="col">Duración</th>
+                                <th scope="col">Intensidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pádel</td>
+                                <td>3-4</td>
+                                <td>90 min</td>
+                                <td>Media-Alta</td>
+                            </tr>
+                            <tr>
+                                <td>Fútbol</td>
+                                <td>4-5</td>
+                                <td>120 min</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <td>Baloncesto</td>
+                                <td>3-4</td>
+                                <td>100 min</td>
+                                <td>Media-Alta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <details>
+                    <summary>Tips nutricionales para deportistas</summary>
+                    <dl>
+                        <dt>Pre-entreno</dt>
+                        <dd>Carbohidratos de absorción lenta 2-3 horas antes</dd>
+                        <dt>Durante el entreno</dt>
+                        <dd>Hidratación constante con bebidas isotónicas</dd>
+                        <dt>Post-entreno</dt>
+                        <dd>Proteínas y carbohidratos en los primeros 30 minutos</dd>
+                    </dl>
+                </details>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Categorías del blog</h3>
+            <ul>
+                <li>Técnica deportiva</li>
+                <li>Nutrición</li>
+                <li>Preparación física</li>
+                <li>Psicología deportiva</li>
+                <li>Material deportivo</li>
+            </ul>
+
+            <section>
+                <h4>Suscríbete a nuestro newsletter</h4>
+                <form method="post" action="#">
+                    <label for="newsletter-email">Email:</label>
+                    <input type="email" id="newsletter-email" name="newsletter-email" required>
+                    <input type="submit" value="Suscribirse">
+                </form>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <address>
+            <p>Centro Deportivo SportMax</p>
+            <p>Blog: <a href="mailto:blog@sportmax.es">blog@sportmax.es</a></p>
+        </address>
+        <p><time datetime="2025-09-24">© 2025</time> Centro Deportivo SportMax.</p>
+    </footer>
+</body>
+</html>

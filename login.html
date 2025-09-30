@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Acceso al portal de usuarios del Centro Deportivo SportMax">
+    <title>Login - Centro Deportivo SportMax</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Centro Deportivo SportMax</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html" aria-current="page">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Acceso de usuarios</h2>
+            <article>
+                <form method="post" action="#" novalidate>
+                    <fieldset>
+                        <legend>Datos de acceso</legend>
+                        
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="tu@email.com" autocomplete="email">
+                        
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required minlength="8" autocomplete="current-password">
+                        
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Recordar sesión</label>
+                    </fieldset>
+                    
+                    <input type="submit" value="Iniciar sesión">
+                    <input type="reset" value="Limpiar">
+                </form>
+
+                <details>
+                    <summary>¿Olvidaste tu contraseña?</summary>
+                    <p>Puedes recuperar tu contraseña enviando un correo a <a href="mailto:soporte@sportmax.es">soporte@sportmax.es</a></p>
+                </details>
+            </article>
+        </section>
+
+        <nav aria-label="Navegación principal después del login">
+            <h3>Acceso a secciones</h3>
+            <ul>
+                <li>
+                    <a href="instalaciones.html">Instalaciones</a>
+                    <ul>
+                        <li><a href="padel.html">Pistas de pádel</a></li>
+                        <li><a href="futbol.html">Pistas de fútbol</a></li>
+                        <li><a href="baloncesto.html">Canchas de baloncesto</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="personal.html">Personal</a>
+                    <ul>
+                        <li><a href="equipo.html">Equipo</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li>
+                    <a href="noticias.html">Noticias</a>
+                    <ul>
+                        <li><a href="noticia1.html">Noticia 1</a></li>
+                        <li><a href="noticia2.html">Noticia 2</a></li>
+                        <li><a href="noticia3.html">Noticia 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <footer>
+        <address>
+            <p>Centro Deportivo SportMax</p>
+            <p>Calle del Deporte, 123</p>
+            <p>41940 Tomares, Sevilla</p>
+            <p>Tel: <a href="tel:+34954123456">954 123 456</a></p>
+        </address>
+        <p><time datetime="2025-09-24">© 2025</time> Centro Deportivo SportMax. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

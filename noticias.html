@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Noticias - Centro Deportivo SportMax</title>
+     <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Centro Deportivo SportMax</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="noticias.html" aria-current="page">Noticias</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h2>Noticias y novedades</h2>
+            </header>
+            
+            <article>
+                <h3>Últimas noticias del centro deportivo</h3>
+                <p>Mantente informado sobre todas las novedades, eventos y actividades que acontecen en nuestro centro deportivo.</p>
+
+                <section>
+                    <h4>Noticias destacadas</h4>
+                    
+                    <article>
+                        <header>
+                            <h5><a href="noticia1.html">Nueva temporada de torneos de pádel</a></h5>
+                            <time datetime="2025-09-22">22 de septiembre, 2025</time>
+                        </header>
+                        <p>Arranca la nueva temporada de torneos internos de pádel con premios extraordinarios y nuevas modalidades.</p>
+                        <figure>
+                            <img src="images/thumbs/torneo-padel-thumb.jpg" alt="Torneo de pádel" onclick="window.open('images/torneo-padel.jpg', '_blank')">
+                            <figcaption>Participantes del torneo de pádel 2024</figcaption>
+                        </figure>
+                        <p><a href="noticia1.html">Leer más...</a></p>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h5><a href="noticia2.html">Ampliación de horarios de las instalaciones</a></h5>
+                            <time datetime="2025-09-20">20 de septiembre, 2025</time>
+                        </header>
+                        <p>A partir del próximo mes, extendemos nuestros horarios para ofrecer mayor flexibilidad a nuestros usuarios.</p>
+                        <figure>
+                            <img src="images/thumbs/horarios-thumb.jpg" alt="Nuevos horarios" onclick="window.open('images/horarios.jpg', '_blank')">
+                            <figcaption>Cartel informativo de los nuevos horarios</figcaption>
+                        </figure>
+                        <p><a href="noticia2.html">Leer más...</a></p>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h5><a href="noticia3.html">Jornada de puertas abiertas para familias</a></h5>
+                            <time datetime="2025-09-18">18 de septiembre, 2025</time>
+                        </header>
+                        <p>El próximo fin de semana organizamos una jornada especial para que las familias conozcan nuestras instalaciones.</p>
+                        <figure>
+                            <img src="images/thumbs/puertas-abiertas-thumb.jpg" alt="Jornada de puertas abiertas" onclick="window.open('images/puertas-abiertas.jpg', '_blank')">
+                            <figcaption>Familias disfrutando de las actividades</figcaption>
+                        </figure>
+                        <p><a href="noticia3.html">Leer más...</a></p>
+                    </article>
+                </section>
+
+                <section>
+                    <h4>Archivo de noticias por categoría</h4>
+                    
+                    <dl>
+                        <dt>Torneos y competiciones</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="noticia1.html">Nueva temporada de torneos de pádel</a></li>
+                                <li>Liga de verano de fútbol 7</li>
+                                <li>Campeonato interno de baloncesto</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt>Instalaciones y servicios</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="noticia2.html">Ampliación de horarios</a></li>
+                                <li>Renovación del césped artificial</li>
+                                <li>Nueva cafetería deportiva</li>
+                            </ul>
+                        </dd>
+                        
+                        <dt>Eventos especiales</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="noticia3.html">Jornada de puertas abiertas</a></li>
+                                <li>Campus deportivo de verano</li>
+                                <li>Masterclass con profesionales</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </section>
+
+                <section>
+                    <h4>Calendario de eventos próximos</h4>
+                    <table>
+                        <caption>Próximos eventos programados en el centro</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Evento</th>
+                                <th scope="col">Modalidad</th>
+                                <th scope="col">Inscripciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><time datetime="2025-09-28">28 Sep</time></td>
+                                <td>Puertas abiertas</td>
+                                <td>General</td>
+                                <td>Gratuito</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="2025-10-05">05 Oct</time></td>
+                                <td>Torneo de pádel</td>
+                                <td rowspan="2">Competición</td>
+                                <td>50€/pareja</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="2025-10-12">12 Oct</time></td>
+                                <td>Liga de fútbol 7</td>
+                                <td>200€/equipo</td>
+                            </tr>
+                            <tr>
+                                <td><time datetime="2025-10-19">19 Oct</time></td>
+                                <td>Masterclass baloncesto</td>
+                                <td colspan="2">Actividad formativa - 25€</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <details>
+                    <summary>Suscríbete a nuestras noticias</summary>
+                    <form method="post" action="#">
+                        <fieldset>
+                            <legend>Preferencias de noticias</legend>
+                            
+                            <label for="email-noticias">Correo electrónico:</label>
+                            <input type="email" id="email-noticias" name="email-noticias" required>
+                            
+                            <p>Categorías de interés:</p>
+                            <input type="checkbox" id="cat-torneos" name="categorias[]" value="torneos" checked>
+                            <label for="cat-torneos">Torneos y competiciones</label>
+                            
+                            <input type="checkbox" id="cat-instalaciones" name="categorias[]" value="instalaciones">
+                            <label for="cat-instalaciones">Instalaciones y servicios</label>
+                            
+                            <input type="checkbox" id="cat-eventos" name="categorias[]" value="eventos">
+                            <label for="cat-eventos">Eventos especiales</label>
+                            
+                            <label for="frecuencia">Frecuencia:</label>
+                            <select id="frecuencia" name="frecuencia">
+                                <option value="diaria">Diaria</option>
+                                <option value="semanal" selected>Semanal</option>
+                                <option value="mensual">Mensual</option>
+                            </select>
+                        </fieldset>
+                        
+                        <input type="submit" value="Suscribirse">
+                    </form>
+                </details>
+            </article>
+
+            <nav aria-label="Noticias individuales">
+                <h3>Lee nuestras noticias completas</h3>
+                <ul>
+                    <li><a href="noticia1.html">Nueva temporada de torneos de pádel</a></li>
+                    <li><a href="noticia2.html">Ampliación de horarios de las instalaciones</a></li>
+                    <li><a href="noticia3.html">Jornada de puertas abiertas para familias</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <aside>
+            <h3>Redes sociales</h3>
+            <ul>
+                <li><a href="https://facebook.com/sportmax" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/sportmax" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com/sportmax" target="_blank">Instagram</a></li>
+            </ul>
+            
+            <h4>Estadísticas del centro</h4>
+            <meter value="1250" min="0" max="1500">1250</meter>
+            <p>Usuarios registrados</p>
+            
+            <progress value="75" max="100">75%</progress>
+            <p>Ocupación media mensual</p>
+            
+            <h4>Últimos tweets</h4>
+            <blockquote cite="https://twitter.com/sportmax">
+                <p>"¡Gran ambiente en el torneo de pádel de esta mañana! 🏆 #PadelSportMax"</p>
+                <footer>— <cite>@SportMax</cite>, <time datetime="2025-09-24">hace 2 horas</time></footer>
+            </blockquote>
+        </aside>
+    </main>
+
+    <footer>
+        <address>
+            <p>Centro Deportivo SportMax</p>
+            <p>Noticias: <a href="mailto:comunicacion@sportmax.es">comunicacion@sportmax.es</a></p>
+        </address>
+        <p><time datetime="2025-09-24">© 2025</time> Centro Deportivo SportMax.</p>
+    </footer>
+</body>
+</html>

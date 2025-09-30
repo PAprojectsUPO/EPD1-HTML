@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Centro Deportivo SportMax</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Centro Deportivo SportMax</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="instalaciones.html">Instalaciones</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <header>
+                <h2>Contacta con nosotros</h2>
+            </header>
+            
+            <article>
+                <h3>Formulario de contacto</h3>
+                <form method="post" action="#" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        
+                        <label for="nombre">Nombre completo: *</label>
+                        <input type="text" id="nombre" name="nombre" required maxlength="50" autocomplete="name">
+                        
+                        <label for="email">Correo electrónico: *</label>
+                        <input type="email" id="email" name="email" required placeholder="ejemplo@email.com" autocomplete="email">
+                        
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" title="Introduce un número de 9 dígitos" autocomplete="tel">
+                        
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="12" max="99" step="1">
+                        
+                        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" min="1920-01-01" max="2010-12-31" autocomplete="bday">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Información del contacto</legend>
+                        
+                        <label for="asunto">Asunto: *</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto</option>
+                            <optgroup label="Información general">
+                                <option value="info-precios">Información sobre precios</option>
+                                <option value="info-horarios">Consulta de horarios</option>
+                                <option value="info-instalaciones">Información sobre instalaciones</option>
+                            </optgroup>
+                            <optgroup label="Reservas">
+                                <option value="reserva-padel">Reservar pista de pádel</option>
+                                <option value="reserva-futbol">Reservar campo de fútbol</option>
+                                <option value="reserva-baloncesto">Reservar cancha de baloncesto</option>
+                            </optgroup>
+                            <optgroup label="Otros">
+                                <option value="sugerencia">Sugerencias</option>
+                                <option value="queja">Quejas</option>
+                                <option value="otros">Otros</option>
+                            </optgroup>
+                        </select>
+                        
+                        <label for="prioridad">Prioridad:</label>
+                        <input type="range" id="prioridad" name="prioridad" min="1" max="5" value="3" oninput="document.getElementById('prioridad-value').textContent = this.value">
+                        <output id="prioridad-value">3</output> (1=Baja, 5=Urgente)
+                        
+                        <label for="deporte">Deporte de interés:</label>
+                        <datalist id="deportes-list">
+                            <option value="Pádel">
+                            <option value="Fútbol">
+                            <option value="Baloncesto">
+                            <option value="Tenis">
+                            <option value="Voleibol">
+                        </datalist>
+                        <input type="text" id="deporte" name="deporte" list="deportes-list" placeholder="Escribe o selecciona un deporte">
+                        
+                        <label for="mensaje">Mensaje: *</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" cols="50" required minlength="10" maxlength="500" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        
+                        <label for="adjunto">Adjuntar archivo (opcional):</label>
+                        <input type="file" id="adjunto" name="adjunto" accept=".pdf,.doc,.docx,.jpg,.png" multiple>
+                        
+                        <label for="hora-contacto">Hora preferida de contacto:</label>
+                        <input type="time" id="hora-contacto" name="hora-contacto" min="08:00" max="20:00">
+                        
+                        <label for="url-web">Sitio web personal (opcional):</label>
+                        <input type="url" id="url-web" name="url-web" placeholder="https://ejemplo.com">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Preferencias de contacto</legend>
+                        
+                        <p>¿Cómo prefieres que te contactemos?</p>
+                        <input type="radio" id="contacto-email" name="metodo-contacto" value="email" checked>
+                        <label for="contacto-email">Por correo electrónico</label>
+                        
+                        <input type="radio" id="contacto-telefono" name="metodo-contacto" value="telefono">
+                        <label for="contacto-telefono">Por teléfono</label>
+                        
+                        <input type="radio" id="contacto-ambos" name="metodo-contacto" value="ambos">
+                        <label for="contacto-ambos">Ambos métodos</label>
+                        
+                        <p>Servicios de interés: (puedes seleccionar varios)</p>
+                        <input type="checkbox" id="clases-particulares" name="servicios[]" value="clases-particulares">
+                        <label for="clases-particulares">Clases particulares</label>
+                        
+                        <input type="checkbox" id="alquiler-material" name="servicios[]" value="alquiler-material">
+                        <label for="alquiler-material">Alquiler de material</label>
+                        
+                        <input type="checkbox" id="eventos" name="servicios[]" value="eventos">
+                        <label for="eventos">Organización de eventos</label>
+                        
+                        <input type="checkbox" id="torneos" name="servicios[]" value="torneos">
+                        <label for="torneos">Participación en torneos</label>
+                        
+                        <input type="checkbox" id="newsletter" name="newsletter" value="si">
+                        <label for="newsletter">Suscribirme al newsletter</label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Cita previa</legend>
+                        
+                        <label for="fecha-cita">Fecha preferida:</label>
+                        <input type="datetime-local" id="fecha-cita" name="fecha-cita" min="2025-09-25T08:00" max="2025-12-31T20:00">
+                        
+                        <label for="duracion-cita">Duración estimada (minutos):</label>
+                        <input type="number" id="duracion-cita" name="duracion-cita" min="15" max="120" step="15" value="30">
+                        
+                        <label for="color-preferido">Color favorito (personalización):</label>
+                        <input type="color" id="color-preferido" name="color-preferido" value="#0066cc">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Términos y condiciones</legend>
+                        
+                        <input type="checkbox" id="politica-privacidad" name="politica-privacidad" required>
+                        <label for="politica-privacidad">Acepto la política de privacidad *</label>
+                        
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones *</label>
+                        
+                        <input type="hidden" name="token" value="abc123xyz">
+                    </fieldset>
+                    
+                    <p><button type="submit">Enviar formulario</button></p>
+                    <p><button type="reset">Limpiar formulario</button></p>
+                </form>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Información de contacto</h3>
+            <address>
+                <h4>Datos de contacto</h4>
+                <p><strong>Dirección:</strong><br>
+                Calle del Deporte, 123<br>
+                41940 Tomares, Sevilla</p>
+                
+                <p><strong>Teléfono:</strong><br>
+                <a href="tel:+34954123456">954 123 456</a></p>
+                
+                <p><strong>Email:</strong><br>
+                <a href="mailto:info@sportmax.es">info@sportmax.es</a></p>
+                
+                <p><strong>Horario de atención:</strong><br>
+                Lunes a Viernes: 8:00 - 21:00<br>
+                Sábados: 9:00 - 20:00<br>
+                Domingos: 10:00 - 18:00</p>
+            </address>
+            
+            <section>
+                <h4>Localización</h4>
+                <p>Nos encontramos en el corazón de Tomares, con fácil acceso en transporte público y amplio parking gratuito.</p>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <address>
+            <p>Centro Deportivo SportMax</p>
+            <p>Contacto: <a href="mailto:info@sportmax.es">info@sportmax.es</a></p>
+        </address>
+        <p><time datetime="2025-09-24">© 2025</time> Centro Deportivo SportMax.</p>
+    </footer>
+</body>
+</html>
