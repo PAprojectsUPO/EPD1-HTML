@@ -45,7 +45,10 @@
                 <p>Disfruta del mejor pádel en nuestras 8 pistas profesionales con cristales templados y césped artificial de última generación.</p>
                 
                 <figure>
-                    <img src="images/thumbs/pistas-padel-thumb.jpg" alt="Pistas de pádel del centro" onclick="window.open('images/pistas-padel.jpg', '_blank')">
+                    <img src="https://www.padelen.com/assets/images/instalacion/medium/default.jpg" 
+                    width="400" height="250"
+                    alt="Pistas de pádel del centro" 
+                    onclick="window.open('https://www.padelen.com/assets/images/instalacion/medium/default.jpg', '_blank')">
                     <figcaption>Vista de nuestras pistas de pádel profesionales</figcaption>
                 </figure>
 
@@ -163,27 +166,31 @@
         </section>
 
         <aside>
-            <h3>Reserva tu pista</h3>
-            <form method="post" action="#">
-                <label for="fecha-padel">Fecha:</label>
-                <input type="date" id="fecha-padel" name="fecha-padel" required min="2025-09-25">
-                
-                <label for="hora-padel">Hora:</label>
-                <input type="time" id="hora-padel" name="hora-padel" required min="09:00" max="23:00" step="3600">
-                
-                <label for="duracion-padel">Duración:</label>
-                <select id="duracion-padel" name="duracion-padel" required>
-                    <option value="60">1 hora</option>
-                    <option value="90" selected>1.5 horas</option>
-                    <option value="120">2 horas</option>
-                </select>
-                
-                <input type="submit" value="Reservar">
-            </form>
+            <h3>Realizar reserva</h3>
+            <fieldset>
+                <legend>Detalles de la reserva</legend>
+                <form method="post" action="#">
+                    <label for="fecha-padel">Fecha:</label>
+                    <input type="date" id="fecha-padel" name="fecha-padel" required min="2025-09-25">
 
-            <h4>Estado de las pistas</h4>
-            <meter value="6" min="0" max="8" title="6 de 8 pistas disponibles">6/8</meter>
-            <p>Pistas disponibles ahora</p>
+                    <label for="hora-padel">Hora:</label>
+                    <input type="time" id="hora-padel" name="hora-padel" required min="09:00" max="23:00" step="3600">
+
+                    <label for="duracion-padel">Duración:</label>
+                    <select id="duracion-padel" name="duracion-padel" required>
+                        <option value="60">1 hora</option>
+                        <option value="90" selected>1.5 horas</option>
+                        <option value="120">2 horas</option>
+                    </select>
+
+                    
+                </form>
+            </fieldset>
+            <input type="submit" value="Reservar">
+
+            <h4>Ocupación actual</h4>
+            <p>Pistas ocupadas: <meter value="6" min="0" max="8"></meter> <strong>6/8</strong></p>
+            
         </aside>
     </main>
 

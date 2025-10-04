@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Jornada de puertas abiertas - Noticias SportMax</title>
+    <title>Marc Márquez sella su fichaje por Ducati - Noticias SportMax</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
@@ -52,7 +52,10 @@
                 <p>&ldquo;Estoy preparado para este desafío. Ducati ha demostrado ser la moto más competitiva del campeonato y estoy convencido de que juntos podemos conseguir grandes cosas&rdquo;, declaró Márquez en la presentación oficial.</p>
                 
                 <figure>
-                    <img src="images/thumbs/marc-marquez-ducati-thumb.jpg" alt="Marc Márquez con los colores de Ducati" onclick="window.open('images/marc-marquez-ducati.jpg', '_blank')">
+                    <img src="https://www.todocircuito.com/ckfinder/userfiles/images/MarcDucati-132.jpg"
+                    height="245" width="400" 
+                    alt="Marc Márquez con los colores de Ducati" 
+                    onclick="window.open('https://www.todocircuito.com/ckfinder/userfiles/images/MarcDucati-132.jpg', '_blank')">
                     <figcaption>Marc Márquez durante la presentación oficial con Ducati Factory</figcaption>
                 </figure>
 
@@ -308,13 +311,13 @@
                 </section>
 
                 <audio controls>
-                    <source src="https://example.com/marc-marquez-ducati-announcement.mp3" type="audio/mpeg">
+                    <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3" type="audio/mpeg">
                     Tu navegador no soporta el elemento audio.
                 </audio>
                 <p><small>Declaraciones completas de Marc Márquez en su presentación con Ducati</small></p>
 
                 <video controls width="500">
-                    <source src="https://example.com/marc-marquez-gresini-highlights.mp4" type="video/mp4">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                     Tu navegador no soporta el elemento video.
                 </video>
                 <p><small>Resumen de las mejores carreras de Márquez con Gresini en 2024</small></p>
@@ -360,25 +363,29 @@
                         <option value="6-10">6º-10º</option>
                     </select>
                     
-                    <p>Rival más fuerte:</p>
-                    <input type="radio" id="rival-bagnaia" name="rival-principal" value="bagnaia" required>
-                    <label for="rival-bagnaia">Francesco Bagnaia</label>
-                    
-                    <input type="radio" id="rival-martin" name="rival-principal" value="martin">
-                    <label for="rival-martin">Jorge Martín</label>
-                    
-                    <input type="radio" id="rival-acosta" name="rival-principal" value="acosta">
-                    <label for="rival-acosta">Pedro Acosta</label>
-                    
-                    <p>Circuitos donde ganará:</p>
-                    <input type="checkbox" id="circuit-austin" name="circuitos[]" value="austin">
-                    <label for="circuit-austin">Austin (COTA)</label>
-                    
-                    <input type="checkbox" id="circuit-sachsenring" name="circuitos[]" value="sachsenring">
-                    <label for="circuit-sachsenring">Sachsenring</label>
-                    
-                    <input type="checkbox" id="circuit-aragon" name="circuitos[]" value="aragon">
-                    <label for="circuit-aragon">Aragón</label>
+                    <fieldset>
+                        <legend>Rival más fuerte:</legend>
+                        <input type="radio" id="rival-bagnaia" name="rival-principal" value="bagnaia" required>
+                        <label for="rival-bagnaia">Francesco Bagnaia</label>
+                        
+                        <input type="radio" id="rival-martin" name="rival-principal" value="martin">
+                        <label for="rival-martin">Jorge Martín</label>
+                        
+                        <input type="radio" id="rival-acosta" name="rival-principal" value="acosta">
+                        <label for="rival-acosta">Pedro Acosta</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Circuitos donde ganará:</legend>
+                        <input type="checkbox" id="circuit-austin" name="circuitos[]" value="austin">
+                        <label for="circuit-austin">Austin (COTA)</label>
+                        
+                        <input type="checkbox" id="circuit-sachsenring" name="circuitos[]" value="sachsenring">
+                        <label for="circuit-sachsenring">Sachsenring</label>
+                        
+                        <input type="checkbox" id="circuit-aragon" name="circuitos[]" value="aragon">
+                        <label for="circuit-aragon">Aragón</label>
+                    </fieldset>
                     
                     <label for="comentario-prediccion">Tu análisis:</label>
                     <textarea id="comentario-prediccion" name="comentario-prediccion" rows="3" placeholder="¿Por qué crees que Márquez tendrá éxito con Ducati?"></textarea>
@@ -388,11 +395,10 @@
             </form>
             
             <h4>Probabilidad de título</h4>
-            <meter value="7" min="0" max="10">7/10</meter>
-            <p>Expertos deportivos</p>
             
-            <progress value="85" max="100">85%</progress>
-            <p>Confianza en adaptación</p>
+            <p>Expertos deportivos: <meter value="7" min="0" max="10"></meter> 7/10</p>
+            
+            <p>Confianza en adaptación: <progress value="85" max="100"></progress> 85%</p>
             
             <h4>Contacto MotoGP</h4>
             <address>

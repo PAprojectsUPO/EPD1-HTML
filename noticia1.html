@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Nueva temporada de torneos de pádel - Noticias SportMax</title>
+    <title>Cada jugador del Atlético corrió dos kilómetros más que los del Madrid - Noticias SportMax</title>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
@@ -48,8 +48,11 @@
                 <p><strong>Los jugadores del Real Madrid, de media, corrieron 7,8 kilómetros en el Metropolitano... y los del Atlético, 9,6. Es una diferencia de 1,8 kilómetros que evidencia una clara falta de actitud.</strong></p>
                 
                 <figure>
-                    <img src="images/thumbs/derbi-madrid-thumb.jpg" alt="Jugadores del Real Madrid tras encajar un gol" onclick="window.open('images/derbi-madrid.jpg', '_blank')">
-                    <figcaption>Los jugadores del Real Madrid, tras encajar un gol en el derbi. Imagen: DANI SANCHEZ</figcaption>
+                    <img src="https://piks.eldesmarque.com/bin/2025/09/28/derbi_atletico_real_madrid_001.jpg" 
+                    height="245" width="400"
+                    alt="Jugadores del Real Madrid tras encajar un gol" 
+                    onclick="window.open('https://piks.eldesmarque.com/bin/2025/09/28/derbi_atletico_real_madrid_001.jpg', '_blank')">
+                    <figcaption>Los jugadores del Real Madrid, tras encajar un gol en el derbi.</figcaption>
                 </figure>
 
                 <h3>El dato que evidencia la falta de actitud</h3>
@@ -127,8 +130,11 @@
                 </section>
 
                 <figure>
-                    <img src="images/thumbs/mbappe-tristeza-thumb.jpg" alt="Mbappé tras encajar gol" onclick="window.open('images/mbappe-tristeza.jpg', '_blank')">
-                    <figcaption>Tristeza de Kylian Mbappé tras el 1-0. Imagen: DANI SANCHEZ</figcaption>
+                    <img src="https://net-storage.tcccdn.com/storage/bernabeudigital.com/img_notizie/thumb3/81/81fb0dcc1fc5ab3fce8dd55ad1678ae0-21876-oooz0000.jpeg" 
+                    height="245" width="400"
+                    alt="Mbappé tras encajar gol" 
+                    onclick="window.open('https://net-storage.tcccdn.com/storage/bernabeudigital.com/img_notizie/thumb3/81/81fb0dcc1fc5ab3fce8dd55ad1678ae0-21876-oooz0000.jpeg', '_blank')">
+                    <figcaption>Tristeza de Kylian Mbappé tras el 1-0.</figcaption>
                 </figure>
 
                 <section>
@@ -208,14 +214,16 @@
                     <input type="range" id="valoracion" name="valoracion" min="1" max="10" value="5" oninput="document.getElementById('valoracion-output').textContent = this.value">
                     <output id="valoracion-output">5</output> de 10
                     
-                    <label for="equipo-favorito">Equipo favorito:</label>
-                    <input type="radio" id="madrid" name="equipo-favorito" value="madrid">
-                    <label for="madrid">Real Madrid</label>
-                    <input type="radio" id="atletico" name="equipo-favorito" value="atletico">
-                    <label for="atletico">Atlético de Madrid</label>
-                    <input type="radio" id="neutral" name="equipo-favorito" value="neutral" checked>
-                    <label for="neutral">Neutral</label>
-                    
+                    <fieldset>
+                        <legend>¿Cuál es tu equipo favorito?</legend>
+                        <label for="equipo-favorito"></label>
+                        <input type="radio" id="madrid" name="equipo-favorito" value="madrid">
+                        <label for="madrid">Real Madrid</label>
+                        <input type="radio" id="atletico" name="equipo-favorito" value="atletico">
+                        <label for="atletico">Atlético de Madrid</label>
+                        <input type="radio" id="neutral" name="equipo-favorito" value="neutral" checked>
+                        <label for="neutral">Neutral</label>
+                    </fieldset>
                     <label for="comentario-texto">Comentario:</label>
                     <textarea id="comentario-texto" name="comentario-texto" rows="4" maxlength="300" placeholder="Comparte tu opinión sobre el partido..."></textarea>
                     
@@ -235,8 +243,7 @@
             </address>
             
             <h4>Estadísticas del derbi</h4>
-            <meter value="5" min="0" max="10">5 de 10</meter>
-            <p>Valoración media de lectores</p>
+            <p>Valoración media de lectores: <meter value="5" min="0" max="10"></meter> 5/10 </p>
             
             <h4>Próximos partidos</h4>
             <ul>
