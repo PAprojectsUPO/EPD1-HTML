@@ -45,7 +45,10 @@
                 <p>Campos de fútbol con césped artificial de última generación, perfectos para partidos y entrenamientos de todas las categorías.</p>
                 
                 <figure>
-                    <img src="images/thumbs/campo-futbol-thumb.jpg" alt="Campo de fútbol del centro" onclick="window.open('images/campo-futbol.jpg', '_blank')">
+                    <img src="https://www.comunidad.madrid/sites/default/files/styles/block_teaser_image_horizontal/public/doc/deporte/campo-futbol-7-san-vicente.jpg?itok=MxK-2wqg"
+                     width="400" height="250"
+                     alt="Campo de fútbol del centro" 
+                     onclick="window.open('https://www.comunidad.madrid/sites/default/files/styles/block_teaser_image_horizontal/public/doc/deporte/campo-futbol-7-san-vicente.jpg?itok=MxK-2wqg', '_blank')">
                     <figcaption>Campo de fútbol 11 con césped artificial profesional</figcaption>
                 </figure>
 
@@ -167,7 +170,7 @@
         </section>
 
         <aside>
-            <h3>Reserva rápida</h3>
+            <h3>Realizar reserva</h3>
             <form method="post" action="#">
                 <fieldset>
                     <legend>Detalles de la reserva</legend>
@@ -178,6 +181,8 @@
                     
                     <input type="radio" id="futbol-11" name="tipo-futbol" value="futbol11">
                     <label for="futbol-11">Fútbol 11</label>
+                    
+                    <p> </p>
                     
                     <label for="fecha-futbol">Fecha:</label>
                     <input type="date" id="fecha-futbol" name="fecha-futbol" required>
@@ -193,12 +198,11 @@
                     </select>
                 </fieldset>
                 
-                <input type="submit" value="Consultar disponibilidad">
+                <input type="submit" value="Reservar">
             </form>
 
-            <h4>Estado actual</h4>
-            <progress value="2" max="4">2 de 4</progress>
-            <p>Campos disponibles</p>
+            <h4>Ocupación actual</h4>
+            <p>Campos ocupados:  <progress value="2" max="4"> </progress> 2/4 </p>
             
             <h4>Próximos partidos</h4>
             <ul>
